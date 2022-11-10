@@ -16,7 +16,7 @@ const registerController = {
                     if(erro){
                     res.status(200).send('erro na criação do post' + erro)
                     }
-                    res.send('cadastro realizado com sucesso')
+                    res.redirect('/login')
                 });
             }else{
                 res.send('usuario já existe')
